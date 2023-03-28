@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Model</title>
+</head>
+<body>
+    <h1>Select Model</h1>
+    <form method="POST" action="{{ url_for('select_model') }}">
+        <label>Select Model Type:</label><br><br>
+        <input type="radio" id="linear" name="model_type" value="linear">
+        <label for="linear">Linear Regression (Height-Weight Dataset)</label><br>
+        <input type="radio" id="logistic" name="model_type" value="logistic">
+        <label for="logistic">Logistic Regression (Iris Flower Dataset)</label><br><br>
+        <input type="submit" value="Select">
+    </form>
+</body>
+</html>
